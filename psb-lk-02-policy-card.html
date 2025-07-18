@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>ПСБ</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- wrapper inner -->
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+                        <div class="header-nav">
+                            <div class="header-logo"><a href="#"><img src="images/logo-mini.svg" alt=""></a></div>
+                            <ul>
+                                <li><a href="#">Профиль</a></li>
+                                <li><a href="#">Документы</a></li>
+                                <li><a href="#">Полис путешественника</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-user">
+                            <a href="#" class="header-user-link"><em><svg><use xlink:href="images/sprite.svg#icon-user"></use></svg></em>Сергей Анипадистовч Ивушкин<span><svg><use xlink:href="images/sprite.svg#icon-user"></use></svg></span></a>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="back-link"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#back-link"></use></svg><svg><use xlink:href="images/sprite.svg#icon-home"></use></svg></a></div>
+
+                    <!-- main polis -->
+                    <div class="main-polis main-polis-prime">
+                        <div class="main-polis-prime-title"><span>Основной полис</span></div>
+                        <div class="main-polis-header">
+                            <div class="main-polis-title">ДМС № ЦО-206-0097-0327</div>
+                            <div class="main-polis-period">25 декабря 2023 — 27 декабря 2025</div>
+                        </div>
+                        <div class="main-polis-name">Рокоссовский Сергей Константинович</div>
+                    </div>
+                    <!-- main polis END -->
+
+                    <!-- card -->
+                    <div class="card">
+                        <!-- tabs -->
+                        <div class="tabs">
+                            <div class="tabs-menu">
+                            </div>
+                            <div class="tabs-container">
+
+                                <!-- tabs content -->
+                                <div class="tabs-content" data-title="Клиники">
+
+                                    <div class="card-tabs-header">
+                                        <div class="card-tabs-title">Клиники</div>
+                                    </div>
+
+                                    <!-- clinics -->
+                                    <div class="clinics list">
+                                        <div class="clinics-views">
+                                            <a href="#" class="clinics-view-list active">Список</a>
+                                            <a href="#" class="clinics-view-map">На карте</a>
+                                        </div>
+
+                                        <!-- clinics ctrl -->
+                                        <form action="ajax/clinics.html" method="post" class="clinics-ctrl">
+                                            <div class="clinics-ctrl-inner">
+                                                <div class="clinics-filter">
+                                                    <a href="#" class="clinics-filter-link"><svg><use xlink:href="images/sprite.svg#clinics-filter"></use></svg>Фильтр<span>0</span></a>
+                                                    <div class="clinics-filter-params"></div>
+                                                </div>
+                                                <div class="clinics-filter-window">
+                                                    <div class="clinics-filter-window-title">Фильтр</div>
+                                                    <a href="#" class="clinics-filter-clear"><svg><use xlink:href="images/sprite.svg#clinics-filter-param-remove"></use></svg><span>Очистить</span></a>
+                                                    <div class="clinics-filter-window-fields">
+                                                        <div class="clinics-filter-window-field" data-title="Поиск">
+                                                            <div class="clinics-filter-window-field-title">Поиск по названию ЛПУ</div>
+                                                            <div class="clinics-filter-window-field-content">
+                                                                <div class="form-input"><input type="text" name="name" value="" placeholder="Введите название" class="clinics-filter-search-input"><svg><use xlink:href="images/sprite.svg#clinics-filter-search"></use></svg></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clinics-filter-window-field">
+                                                            <div class="clinics-filter-window-field-title">Поиск по виду помощи</div>
+                                                            <div class="clinics-filter-window-field-content">
+                                                                <div class="form-select">
+                                                                    <select name="type" data-placeholder="Выберете">
+                                                                        <option value=""></option>
+                                                                        <option value="1">Амбулаторно-поликлиническая помощь</option>
+                                                                        <option value="2">Стоматология</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clinics-filter-window-field">
+                                                            <div class="clinics-filter-window-field-title">Тип доступа:</div>
+                                                            <div class="clinics-filter-window-field-content">
+                                                                <div class="form-checkbox">
+                                                                    <label><input type="checkbox" name="direct"><span>Доступ без гарантийного письма</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- clinics ctrl END -->
+
+                                        <!-- clinics list -->
+                                        <div class="clinics-list">
+
+                                            <div class="clinics-list-search">
+                                                <form action="#" method="post">
+                                                    <div class="form-input"><input type="text" name="search" value="" placeholder="Найти"><svg><use xlink:href="images/sprite.svg#clinics-filter-search"></use></svg></div>
+                                                </form>
+                                            </div>
+
+                                            <!-- clinics list container -->
+                                            <div class="clinics-list-container">
+                                                <div class="clinics-list-item">
+                                                    <div class="clinics-list-item-header">
+                                                        <div class="clinics-list-item-title">АО&nbsp;&laquo;ГК&nbsp;&laquo;ОМС&raquo;&nbsp;&mdash; г. Коломна</div>
+                                                        <div class="clinics-list-item-ctrl">
+                                                            <div class="clinics-list-item-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clinics-list-item-types">Амбулаторно-поликлиническая помощь</div>
+                                                    <div class="clinics-list-item-phones">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                        <div class="clinics-list-item-phone"><span>Регистратура:</span> <a href="tel:+78007751996" class="main">8-800-775-19-96</a></div>
+                                                    </div>
+                                                    <div class="clinics-list-item-address">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                        <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clinics-list-item">
+                                                    <div class="clinics-list-item-header">
+                                                        <div class="clinics-list-item-title">ЗАО &laquo;Коопвнешторг&raquo;</div>
+                                                        <div class="clinics-list-item-ctrl">
+                                                            <div class="clinics-list-item-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clinics-list-item-types">Амбулаторно-поликлиническая помощь</div>
+                                                    <div class="clinics-list-item-phones">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                        <div class="clinics-list-item-phone"><span>Справочная стоматология:</span> <a href="tel:+74956240268" class="main">8-495-624-02-68</a></div>
+                                                        <div class="clinics-list-item-phone"><span>Регистратура:</span> <a href="tel:+74951112220">8-495-111-22-20</a>; <a href="tel:+74952290498">8-495-229-04-98</a></div>
+                                                        <div class="clinics-list-item-phone"><span>Физиотерапия:</span> <a href="tel:+74956214104">8-495-621-41-04</a></div>
+                                                    </div>
+                                                    <div class="clinics-list-item-address">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                        <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clinics-list-item">
+                                                    <div class="clinics-list-item-header">
+                                                        <div class="clinics-list-item-title">ООО &laquo;Мать и&nbsp;дитя Юго-запад&raquo;</div>
+                                                        <div class="clinics-list-item-ctrl">
+                                                            <div class="clinics-list-item-status"><svg><use xlink:href="images/sprite.svg#clinics-status-guarantee"></use></svg><span>Доступ по гарантийному письму</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clinics-list-item-types">Амбулаторно-поликлиническая помощь</div>
+                                                    <div class="clinics-list-item-phones">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                        <div class="clinics-list-item-phone"><span>СМП-Страхование:</span> <a href="tel:+78005558182" class="main">8-800-555-81-82</a>; <a href="tel:+74955369402">8 (495) 536-94-02</a></div>
+                                                    </div>
+                                                    <div class="clinics-list-item-address">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                        <a href="#">117513, г. Москва, ул. Островитянова, д.4, эт.&nbsp;1, пом. XII</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clinics-list-item">
+                                                    <div class="clinics-list-item-header">
+                                                        <div class="clinics-list-item-title">АО&nbsp;&laquo;Группа компаний &laquo;Медси&raquo; - клиника в&nbsp;г. Красногорске</div>
+                                                        <div class="clinics-list-item-ctrl">
+                                                            <div class="clinics-list-item-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clinics-list-item-types">Амбулаторно-поликлиническая помощь Помощь на&nbsp;дому в&nbsp;пределах административной границы города</div>
+                                                    <div class="clinics-list-item-phones">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                        <div class="clinics-list-item-phone"><span>Регистратура:</span> <a href="tel:+74957800500" class="main">8-495-780-05-00</a></div>
+                                                    </div>
+                                                    <div class="clinics-list-item-address">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                        <a href="#">Московская область, р-н Красногорский, г. Красногорск, ул. Успенская, д.&nbsp;5</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clinics-list-item">
+                                                    <div class="clinics-list-item-header">
+                                                        <div class="clinics-list-item-title">ЗАО &laquo;Мед.Ком&raquo;&nbsp;&mdash; Центр стоматологии &laquo;Дентадизайн&raquo;</div>
+                                                        <div class="clinics-list-item-ctrl">
+                                                            <div class="clinics-list-item-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clinics-list-item-types">Стоматологическая помощь</div>
+                                                    <div class="clinics-list-item-phones">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                        <div class="clinics-list-item-phone"><span>Справочная:</span> <a href="tel:+74952280464" class="main">8-495-228-04-64</a></div>
+                                                        <div class="clinics-list-item-phone"><span>Регистратура:</span> <a href="tel:+74952280464">8-495-228-04-64</a></div>
+                                                    </div>
+                                                    <div class="clinics-list-item-address">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                        <a href="#">г. Москва, ул. Флотская, д.&nbsp;76</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- clinics list container END -->
+
+                                            <div class="pager">
+                                                <a href="#" class="pager-prev" data-value="prev"><svg><use xlink:href="images/sprite.svg#pager-prev"></use></svg></a>
+                                                <a href="#" data-value="1">1</a>
+                                                <a href="#" data-value="2">2</a>
+                                                <span>...</span>
+                                                <a href="#" class="active" data-value="6">6</a>
+                                                <a href="#" data-value="7">7</a>
+                                                <a href="#" data-value="8">8</a>
+                                                <span>...</span>
+                                                <a href="#" data-value="17">17</a>
+                                                <a href="#" data-value="19">18</a>
+                                                <a href="#" class="pager-next" data-value="next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                                            </div>
+                                        </div>
+                                        <!-- clinics list END -->
+
+                                        <!-- clinics map -->
+                                        <div class="clinics-map" data-icon="images/map-icon.svg" data-iconactive="images/map-icon-active.svg">
+                                            <div class="clinics-map-container">
+                                                <div class="clinics-map-list">
+                                                    <div class="clinics-map-list-search">
+                                                        <form action="#" method="post">
+                                                            <div class="form-input"><input type="text" name="search" value="" placeholder="Найти"><svg><use xlink:href="images/sprite.svg#clinics-filter-search"></use></svg></div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="clinics-map-list-inner">
+                                                        <div class="clinics-map-list-item" data-lat="55.080009" data-lng="38.762870">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">АО&nbsp;&laquo;ГК&nbsp;&laquo;ОМС&raquo;&nbsp;&mdash; г. Коломна</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">АО&nbsp;&laquo;ГК&nbsp;&laquo;ОМС&raquo;&nbsp;&mdash; г. Коломна</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+78007751996" class="main">8-800-775-19-96</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</a>
+                                                                </div>
+                                                                <a href="#" class="btn clinics-map-detail-online-btn">Записаться</a>
+                                                                <div class="clinics-list-item-form">
+                                                                    <div class="clinics-list-item-form-header">
+                                                                        <div class="clinics-list-item-form-title">Запись к&nbsp;специалисту</div>
+                                                                        <a href="#" class="clinics-list-item-form-close"><svg><use xlink:href="images/sprite.svg#clinics-list-item-form-close"></use></svg></a>
+                                                                    </div>
+                                                                    <div class="clinics-list-item-form-container">
+                                                                        <div class="clinics-list-item-form-results">
+                                                                            <div class="clinics-list-item-form-results-title">информация о записи</div>
+                                                                            <div class="clinics-list-item-form-results-info">
+                                                                                <div class="clinics-list-item-form-results-info-item">
+                                                                                    <div class="clinics-list-item-form-results-info-item-title">Специалист:</div>
+                                                                                    <div class="clinics-list-item-form-results-info-item-value clinics-list-item-form-results-info-item-value-specialty">-</div>
+                                                                                </div>
+                                                                                <div class="clinics-list-item-form-results-info-item">
+                                                                                    <div class="clinics-list-item-form-results-info-item-title">ФИО специалиста</div>
+                                                                                    <div class="clinics-list-item-form-results-info-item-value clinics-list-item-form-results-info-item-value-name">-</div>
+                                                                                </div>
+                                                                                <div class="clinics-list-item-form-results-info-item">
+                                                                                    <div class="clinics-list-item-form-results-info-item-title">Дата посещения:</div>
+                                                                                    <div class="clinics-list-item-form-results-info-item-value clinics-list-item-form-results-info-item-value-date">-</div>
+                                                                                </div>
+                                                                                <div class="clinics-list-item-form-results-info-item">
+                                                                                    <div class="clinics-list-item-form-results-info-item-title">Время посещения</div>
+                                                                                    <div class="clinics-list-item-form-results-info-item-value clinics-list-item-form-results-info-item-value-time">-</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clinics-list-item-form-content">
+                                                                            <form action="ajax/online-success.json" method="post">
+                                                                                <input type="hidden" name="clinic" value="1" class="clinics-list-item-form-clinic">
+                                                                                <div class="form-select clinics-list-item-form-select-specialty">
+                                                                                    <select name="specialty" data-placeholder="Специалист" class="required" data-url="ajax/online-specialty.json">
+                                                                                        <option value=""></option>
+                                                                                        <option value="1">Хирург</option>
+                                                                                        <option value="2">Терапевт</option>
+                                                                                        <option value="3">Стоматолог</option>
+                                                                                        <option value="4">Онколог</option>
+                                                                                        <option value="5">Травматолог</option>
+                                                                                        <option value="6">Гинеколог</option>
+                                                                                        <option value="7">Офтальмолог</option>
+                                                                                        <option value="8">Пульмонолог</option>
+                                                                                        <option value="9">Аллерголог</option>
+                                                                                        <option value="10">Невролог</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-select clinics-list-item-form-select-name">
+                                                                                    <select name="name" data-placeholder="ФИО специалиста" class="required" data-url="ajax/online-name.json">
+                                                                                        <option value=""></option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="form-input clinics-list-item-form-input-date"><span class="form-input-label">Дата посещения</span><input type="text" name="date" value="" class="required" readonly data-url="ajax/online-date.json"></div>
+                                                                                <div class="clinics-list-item-form-time">
+                                                                                    <div class="clinics-list-item-form-time-title">Время посещения</div>
+                                                                                    <div class="clinics-list-item-form-time-list">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="clinics-list-item-form-submit"><input type="submit" value="Подтвердить запись" class="btn"></div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clinics-list-item-form-success">
+                                                                    <div class="clinics-list-item-form-success-icon"><img src="images/clinics-list-item-form-success.png" alt=""></div>
+                                                                    <div class="clinics-list-item-form-success-content">
+                                                                        <div class="clinics-list-item-form-success-title">Спасибо за&nbsp;обращение, вы&nbsp;записаны!</div>
+                                                                        <div class="clinics-list-item-form-success-text">Данные записи отправлены на&nbsp;ваш&nbsp;e-mail.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clinics-list-item-form-error">
+                                                                    <div class="clinics-list-item-form-error-icon"><img src="images/dashboard-warning.png" alt=""></div>
+                                                                    <div class="clinics-list-item-form-error-content">
+                                                                        <div class="clinics-list-item-form-error-title">Произошла ошибка!</div>
+                                                                        <div class="clinics-list-item-form-error-text"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.080009" data-lng="38.782870">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">ЗАО &laquo;Коопвнешторг&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">ЗАО &laquo;Коопвнешторг&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Справочная стоматология:</span> <a href="tel:+74956240268" class="main">8-495-624-02-68</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74951112220">8-495-111-22-20</a>; <a href="tel:+74952290498">8-495-229-04-98</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Физиотерапия:</span> <a href="tel:+74956214104">8-495-621-41-04</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;28</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.645131" data-lng="37.487892">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-guarantee"></use></svg><span>Доступ по гарантийному письму</div>
+                                                                <div class="clinics-map-list-item-header-title">ООО &laquo;Мать и&nbsp;дитя Юго-запад&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>117513, г. Москва, ул. Островитянова, д.4, эт.&nbsp;1, пом. XII</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-guarantee"></use></svg><span>Доступ по гарантийному письму</div>
+                                                                <div class="clinics-map-detail-title">ООО &laquo;Мать и&nbsp;дитя Юго-запад&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>СМП-Страхование:</span> <a href="tel:+78005558182" class="main">8-800-555-81-82</a>; <a href="tel:+74955369402">8 (495) 536-94-02</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">117513, г. Москва, ул. Островитянова, д.4, эт.&nbsp;1, пом. XII</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.833420" data-lng="37.290900">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">АО&nbsp;&laquo;Группа компаний &laquo;Медси&raquo; - клиника в&nbsp;г. Красногорске</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская область, р-н Красногорский, г. Красногорск, ул. Успенская, д.&nbsp;5</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">АО&nbsp;&laquo;Группа компаний &laquo;Медси&raquo; - клиника в&nbsp;г. Красногорске</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь Помощь на&nbsp;дому в&nbsp;пределах административной границы города</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74957800500" class="main">8-495-780-05-00</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская область, р-н Красногорский, г. Красногорск, ул. Успенская, д.&nbsp;5</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.858887" data-lng="37.513808">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">ЗАО &laquo;Мед.Ком&raquo;&nbsp;&mdash; Центр стоматологии &laquo;Дентадизайн&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>г. Москва, ул. Флотская, д.&nbsp;76</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">ЗАО &laquo;Мед.Ком&raquo;&nbsp;&mdash; Центр стоматологии &laquo;Дентадизайн&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Стоматологическая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Справочная:</span> <a href="tel:+74952280464" class="main">8-495-228-04-64</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74952280464">8-495-228-04-64</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">г. Москва, ул. Флотская, д.&nbsp;76</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.180009" data-lng="38.862870">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">АО&nbsp;&laquo;ГК&nbsp;&laquo;ОМС&raquo;&nbsp;&mdash; г. Коломна</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">АО&nbsp;&laquo;ГК&nbsp;&laquo;ОМС&raquo;&nbsp;&mdash; г. Коломна</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+78007751996" class="main">8-800-775-19-96</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.180009" data-lng="38.882870">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">ЗАО &laquo;Коопвнешторг&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;27</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">ЗАО &laquo;Коопвнешторг&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Справочная стоматология:</span> <a href="tel:+74956240268" class="main">8-495-624-02-68</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74951112220">8-495-111-22-20</a>; <a href="tel:+74952290498">8-495-229-04-98</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Физиотерапия:</span> <a href="tel:+74956214104">8-495-621-41-04</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская обл., г. Коломна, пр-кт Кирова, д.&nbsp;29</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.745131" data-lng="37.587892">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-guarantee"></use></svg><span>Доступ по гарантийному письму</div>
+                                                                <div class="clinics-map-list-item-header-title">ООО &laquo;Мать и&nbsp;дитя Юго-запад&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>117513, г. Москва, ул. Островитянова, д.4, эт.&nbsp;1, пом. XII</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-guarantee"></use></svg><span>Доступ по гарантийному письму</div>
+                                                                <div class="clinics-map-detail-title">ООО &laquo;Мать и&nbsp;дитя Юго-запад&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>СМП-Страхование:</span> <a href="tel:+78005558182" class="main">8-800-555-81-82</a>; <a href="tel:+74955369402">8 (495) 536-94-02</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">117513, г. Москва, ул. Островитянова, д.5, эт.&nbsp;1, пом. XII</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="clinics-map-list-item" data-lat="55.933420" data-lng="37.390900">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">АО&nbsp;&laquo;Группа компаний &laquo;Медси&raquo; - клиника в&nbsp;г. Красногорске</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Московская область, р-н Красногорский, г. Красногорск, ул. Успенская, д.&nbsp;5</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">АО&nbsp;&laquo;Группа компаний &laquo;Медси&raquo; - клиника в&nbsp;г. Красногорске</div>
+                                                                <div class="clinics-map-detail-types">Амбулаторно-поликлиническая помощь Помощь на&nbsp;дому в&nbsp;пределах административной границы города</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74957800500" class="main">8-495-780-05-00</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">Московская область, р-н Красногорский, г. Красногорск, ул. Успенская, д.&nbsp;6</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clinics-map-list-item" data-lat="55.958887" data-lng="37.613808">
+                                                            <a href="#" class="clinics-map-list-item-header">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-list-item-header-title">ЗАО &laquo;Мед.Ком&raquo;&nbsp;&mdash; Центр стоматологии &laquo;Дентадизайн&raquo;</div>
+                                                                <div class="clinics-map-list-item-header-address"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>г. Москва, ул. Флотская, д.&nbsp;76</div>
+                                                            </a>
+                                                            <div class="clinics-map-list-item-detail">
+                                                                <div class="clinics-map-detail-status"><svg><use xlink:href="images/sprite.svg#clinics-status-success"></use></svg><span>Доступ без гарантийного письма</div>
+                                                                <div class="clinics-map-detail-title">ЗАО &laquo;Мед.Ком&raquo;&nbsp;&mdash; Центр стоматологии &laquo;Дентадизайн&raquo;</div>
+                                                                <div class="clinics-map-detail-types">Стоматологическая помощь</div>
+                                                                <div class="clinics-map-detail-phones">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>
+                                                                    <div class="clinics-map-detail-phone"><span>Справочная:</span> <a href="tel:+74952280464" class="main">8-495-228-04-64</a></div>
+                                                                    <div class="clinics-map-detail-phone"><span>Регистратура:</span> <a href="tel:+74952280464">8-495-228-04-64</a></div>
+                                                                </div>
+                                                                <div class="clinics-map-detail-address">
+                                                                    <svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>
+                                                                    <a href="#">г. Москва, ул. Флотская, д.&nbsp;78</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clinics-map-detail">
+                                                    <div class="clinics-map-detail-container"></div>
+                                                    <a href="#" class="clinics-map-detail-close"><svg><use xlink:href="images/sprite.svg#clinics-map-detail-close"></use></svg></a>
+                                                </div>
+                                                <div class="clinics-map-content" id="map"></div>
+                                                <script src="https://api-maps.yandex.ru/2.1/?apikey=e57c585d-ec7d-41bf-af46-c8d197dc63c8&lang=ru_RU" type="text/javascript"></script>
+                                                <script>
+                                                    ymaps.ready(init);
+
+                                                    var myMap;
+                                                    var myPlacemarks = [];
+
+                                                    function init() {
+                                                        myMap = new ymaps.Map('map', {
+                                                            center: [55.750382, 37.545370],
+                                                            zoom: 7,
+                                                            controls: ['zoomControl']
+                                                        });
+                                                        myMap.behaviors.disable('scrollZoom');
+
+                                                        updateClinicMap();
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <!-- clinics map END -->
+
+                                    </div>
+                                    <!-- clinics END -->
+
+                                </div>
+                                <!-- tabs content END -->
+
+                                <!-- tabs content -->
+                                <div class="tabs-content" data-title="Гарантийные письма">
+
+                                    <div class="card-tabs-header">
+                                        <div class="card-tabs-title"><span>Гарантийные письма</span><span>Заявка на гарантийное письмо</span></div>
+                                    </div>
+
+                                    <!-- guarantee -->
+                                    <div class="guarantee">
+
+                                        <!-- tabs -->
+                                        <div class="tabs">
+                                            <div class="tabs-menu">
+                                            </div>
+                                            <div class="tabs-container">
+
+                                                <!-- tabs content -->
+                                                <div class="tabs-content" data-title="Активные">
+
+                                                    <!-- guarantee list -->
+                                                    <div class="guarantee-list">
+                                                        <div class="guarantee-item">
+                                                            <div class="guarantee-item-content">
+                                                                <div class="guarantee-item-title">Клиника здоровья Передовые технологии здоровья</div>
+                                                                <div class="guarantee-item-info">
+                                                                    <div class="guarantee-item-info-title">Период действия</div>
+                                                                    <div class="guarantee-item-info-value">25 декабря 2023 — 8 января 2024</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="guarantee-item-download"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg><span>Гарантийное письмо<em>PDF 2,4 мб</em></span></a></div>
+                                                        </div>
+
+                                                        <div class="guarantee-item">
+                                                            <div class="guarantee-item-content">
+                                                                <div class="guarantee-item-title">Семейная клиника Гайде, отделение на Лиговском</div>
+                                                                <div class="guarantee-item-info">
+                                                                    <div class="guarantee-item-info-title">Период действия</div>
+                                                                    <div class="guarantee-item-info-value">25 декабря 2023 — 8 января 2024</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="guarantee-item-download"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg><span>Гарантийное письмо<em>PDF 2,4 мб</em></span></a></div>
+                                                        </div>
+
+                                                        <div class="guarantee-item">
+                                                            <div class="guarantee-item-content">
+                                                                <div class="guarantee-item-title">Центр «Академическая Медицина»</div>
+                                                                <div class="guarantee-item-info">
+                                                                    <div class="guarantee-item-info-title">Период действия</div>
+                                                                    <div class="guarantee-item-info-value">25 декабря 2023 — 8 января 2024</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="guarantee-item-download"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg><span>Гарантийное письмо<em>PDF 2,4 мб</em></span></a></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- guarantee list END -->
+
+                                                    <div class="pager">
+                                                        <a href="#" class="pager-prev"><svg><use xlink:href="images/sprite.svg#pager-prev"></use></svg></a>
+                                                        <a href="#">1</a>
+                                                        <a href="#">2</a>
+                                                        <span>...</span>
+                                                        <a href="#" class="active">6</a>
+                                                        <a href="#">7</a>
+                                                        <a href="#">8</a>
+                                                        <span>...</span>
+                                                        <a href="#">17</a>
+                                                        <a href="#">18</a>
+                                                        <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                                                    </div>
+
+                                                </div>
+                                                <!-- tabs content END -->
+
+                                                <!-- tabs content -->
+                                                <div class="tabs-content" data-title="Архивные">
+
+                                                    <!-- guarantee list -->
+                                                    <div class="guarantee-list">
+                                                        <div class="guarantee-item archive">
+                                                            <div class="guarantee-item-content">
+                                                                <div class="guarantee-item-title">Клиника здоровья Передовые технологии здоровья</div>
+                                                                <div class="guarantee-item-info">
+                                                                    <div class="guarantee-item-info-title">Период действия</div>
+                                                                    <div class="guarantee-item-info-value">25 декабря 2023 — 8 января 2024</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="guarantee-item-download"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg><span>Гарантийное письмо<em>PDF 2,4 мб</em></span></a></div>
+                                                        </div>
+
+                                                        <div class="guarantee-item archive">
+                                                            <div class="guarantee-item-content">
+                                                                <div class="guarantee-item-title">Семейная клиника Гайде, отделение на Лиговском</div>
+                                                                <div class="guarantee-item-info">
+                                                                    <div class="guarantee-item-info-title">Период действия</div>
+                                                                    <div class="guarantee-item-info-value">25 декабря 2023 — 8 января 2024</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="guarantee-item-download"><a href="#" class="btn btn-border"><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg><span>Гарантийное письмо<em>PDF 2,4 мб</em></span></a></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- guarantee list END -->
+
+                                                </div>
+                                                <!-- tabs content END -->
+
+                                                <!-- tabs content -->
+                                                <div class="tabs-content" data-title="Не найдено">
+
+                                                    <div class="empty">
+                                                        <svg><use xlink:href="images/sprite.svg#icon-empty"></use></svg>
+                                                        <div class="empty-title">В&nbsp;данный момент, активных гарантийных писем не&nbsp;найдено</div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- tabs content END -->
+
+                                                <!-- tabs content -->
+                                                <div class="tabs-content" data-title="Загрузка">
+
+                                                    <!-- guarantee list -->
+                                                    <div class="guarantee-list">
+                                                        <div class="guarantee-item loading"></div>
+
+                                                        <div class="guarantee-item loading"></div>
+                                                    </div>
+                                                    <!-- guarantee list END -->
+
+                                                </div>
+                                                <!-- tabs content END -->
+
+                                            </div>
+                                        </div>
+                                        <!-- tabs END -->
+
+                                    </div>
+                                    <!-- guarantee END -->
+
+                                </div>
+                                <!-- tabs content END -->
+
+                            </div>
+                        </div>
+                        <!-- tabs END -->
+
+                    </div>
+                    <!-- card END -->
+
+                </div>
+                <!-- container END -->
+
+            </div>
+            <!-- wrapper inner END -->
+
+            <footer>
+                <div class="container">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                            <div class="footer-logo"><img src="images/logo.svg" alt=""></div>
+                            <div class="footer-disclamer">
+                                <p>Вся информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой.</p>
+                            </div>
+                        </div>
+                        <div class="footer-right">
+                            <div class="footer-copyrights">&copy;&nbsp;2025, ООО &laquo;ПСБ Страхование&raquo;</div>
+                            <div class="footer-menu">
+                                <a href="#">Политика обработки персональных данных</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="app-control">
+                <a href="#" class="active"><span><svg><use xlink:href="images/sprite.svg#app-control-icon-1"></use></svg></span>Главная</a>
+                <a href="#"><span><svg><use xlink:href="images/sprite.svg#app-control-icon-2"></use></svg></span>Документы</a>
+                <a href="#"><span><svg><use xlink:href="images/sprite.svg#app-control-icon-3"></use></svg></span>Контакты</a>
+                <a href="#"><span><svg><use xlink:href="images/sprite.svg#app-control-icon-4"></use></svg></span>Туризм</a>
+                <a href="#"><span><svg><use xlink:href="images/sprite.svg#app-control-icon-5"></use></svg></span>FAQ</a>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

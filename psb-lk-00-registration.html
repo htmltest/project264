@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>ПСБ</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- auth -->
+            <div class="auth">
+                <div class="auth-header">
+                    <div class="auth-logo"><img src="images/logo.svg" alt=""></div>
+                    <a href="#" class="auth-close"><svg><use xlink:href="images/sprite.svg#auth-close"></use></svg></a>
+                </div>
+
+                <div class="auth-container visible">
+                    <div class="registration">
+                        <div class="auth-title">Регистрация</div>
+                        <div class="registration-form">
+                            <form action="#" method="post">
+                                <div class="form-input"><span class="form-input-label">Фамилия<span>*</span></span><input type="text" name="lastname" value=""></div>
+                                <div class="form-input"><span class="form-input-label">Имя<span>*</span></span><input type="text" name="firstname" value=""></div>
+                                <div class="form-input"><span class="form-input-label">Отчество<span>*</span>, если указано в договоре ДМС</span><input type="text" name="middlename" value=""></div>
+                                <div class="form-input form-input-date"><span class="form-input-label">Дата рождения<span>*</span></span><input type="text" name="birthday" value="" class="required birthday18"></div>
+                                <div class="form-input"><span class="form-input-label">Электронная почта<span>*</span></span><input type="text" name="email" value="" class="required email"><a href="#" class="form-input-clear"><svg><use xlink:href="images/sprite.svg#form-input-clear"></use></svg></a></div>
+                                <div class="registration-form-checkbox-nopolis">
+                                    <div class="form-checkbox">
+                                        <label><input type="checkbox" name="nopolis"><span>Не&nbsp;являюсь застрахованным<b><svg><use xlink:href="images/sprite.svg#icon-checkbox-hint"></use></svg><i>Выберите этот пункт, если у вас нет договора страхования по ДМС.</i></b></span></label>
+                                    </div>
+                                </div>
+                                <div class="form-input registration-input-polis"><span class="form-input-label">Номер полиса<span>*</span></span><input type="text" name="polis" value="" class="required"><div class="form-input-hint">Например: ЦО-П012-1234567/12345</div></div>
+                                <div class="registration-form-checkboxes">
+                                    <div class="form-checkbox">
+                                        <label><input type="checkbox" name="personal" class="required"><span>Выражаю свое согласие ООО&nbsp;&laquo;ПСБ&nbsp;Страхование&raquo;<br> <a href="#">на обработку моих персональных данных</a></span></label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <label><input type="checkbox" name="medical" class="required"><span>Выражаю свое согласие ООО&nbsp;&laquo;ПСБ&nbsp;Страхование&raquo;<br> <a href="#">на использование личного кабинета</a></span></label>
+                                    </div>
+                                </div>
+                                <div class="registration-form-ctrl">
+                                    <div class="registration-form-help">
+                                        <div class="registration-form-help-container">
+                                            <div class="registration-form-help-link">Возникли проблемы?</div>
+                                            <div class="registration-form-help-popup">
+                                                <p>
+                                                    В&nbsp;случае возникновения технических проблем обратитесь по&nbsp;бесплатному номеру&nbsp;
+                                                    <a href="tel:+78005118569" class="auth-code-not-popup-phone"><svg><use xlink:href="images/sprite.svg#icon-phone"></use></svg>8 800 511-85-69</a>
+                                                    либо на&nbsp;почтовый ящик&nbsp;
+                                                    <span class="auth-code-not-popup-email">
+                                                        <span class="auth-code-not-popup-email-value"><a href="mailto:zayavki_itdms@psbins.ru">zayavki_itdms@psbins.ru</a></span>
+                                                        <span class="auth-code-not-popup-email-copy" data-clipboard-text="zayavki_itdms@psbins.ru" data-clipboard-success="E-mail скопирован в буфер"><svg><use xlink:href="images/sprite.svg#icon-copy"></use></svg></span>
+                                                    </span>
+                                                </p>
+                                                <p>Время работы тех поддержки:<br> пн-пт с 10:00 до 18:00 по МСК</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-submit"><button type="submit" class="btn">Зарегистрироваться</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- auth END -->
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>
